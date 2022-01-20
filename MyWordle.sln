@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32111.311
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWordle", "MyWordle\MyWordle.csproj", "{C84D4D3D-BDC7-443B-A250-5DF6C287F1D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWordleLib", "MyWordleLib\MyWordleLib.csproj", "{4462571B-4309-44AE-B762-E773472771EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C84D4D3D-BDC7-443B-A250-5DF6C287F1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C84D4D3D-BDC7-443B-A250-5DF6C287F1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C84D4D3D-BDC7-443B-A250-5DF6C287F1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4462571B-4309-44AE-B762-E773472771EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4462571B-4309-44AE-B762-E773472771EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4462571B-4309-44AE-B762-E773472771EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4462571B-4309-44AE-B762-E773472771EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

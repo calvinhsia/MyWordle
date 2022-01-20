@@ -12,4 +12,8 @@
     <PackageReference Include="DictionaryLib_Calvin_Hsia" Version="1.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyWordleLib\MyWordleLib.csproj" />
+  </ItemGroup>
+
 </Project>
