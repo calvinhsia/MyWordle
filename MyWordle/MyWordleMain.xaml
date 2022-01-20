@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MyWordleMain" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="#Ltrs in word"/>
+            <TextBox Text="{Binding TargetWordLength}"  Width="30" ToolTip="Length of word (all unique letters)"/>
+            <CheckBox Content="UseLargeDictionary" IsChecked="{Binding UseLargeDictionary}" Margin="10,5,10,10"/>
+            <Label Content="#Guesses Allowed"/>
+            <TextBox Text="{Binding NumGuessesAllowed}"  Width="30" ToolTip="# Guesses Allowed (guesses must be real words and can have multiple duplicate letters"/>
+            <Label Content="#WordsPossible"/>
+            <TextBox Text="{Binding NumWordsPossible}" Width="60" ToolTip="# Words in specified dictionary with length specified and Unique # letters specified"/>
+            <Button Content="_Go" Margin="10,0,0,0" Click="Button_Click"/>
+        </StackPanel>
+        <UniformGrid x:Name="UniGrid" Grid.Row="1" Width="300" HorizontalAlignment="Left"/>
+        <DockPanel Grid.Row="2">
+            <UserControl x:Name="UCKbdLayout"/>
+        </DockPanel>
     </Grid>
 </Window>
