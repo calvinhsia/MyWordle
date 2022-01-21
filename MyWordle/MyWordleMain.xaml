@@ -20,9 +20,9 @@
             <TextBox Text="{Binding NumGuessesAllowed}"  Width="30" ToolTip="# Guesses Allowed (guesses must be real words and can have multiple duplicate letters"/>
             <Label Content="#WordsPossible"/>
             <TextBox Text="{Binding NumWordsPossible}" Width="60" ToolTip="# Words in specified dictionary with length specified and Unique # letters specified"/>
-            <Button Content="_Go" Margin="10,0,0,0" Click="Button_Click"/>
+            <Button x:Name ="BtnGo" Content="_Go" Margin="10,0,0,0" Click="BtnGo_Click"/>
         </StackPanel>
-        <UniformGrid x:Name="UniGrid" Grid.Row="1" Width="300" HorizontalAlignment="Left"/>
+        <UniformGrid x:Name="UniGrid" Grid.Row="1" Width="300" HorizontalAlignment="Left" Margin="33,0,0,0"/>
         <DockPanel Grid.Row="2">
             <UserControl x:Name="UCKbdLayout"/>
         </DockPanel>

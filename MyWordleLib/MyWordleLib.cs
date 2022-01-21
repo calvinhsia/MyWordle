@@ -2,7 +2,7 @@
 {
     public class MyWordleLib
     {
-        public static HashSet<string> GetWords(DictionaryLib.DictionaryType dictType, int DesiredWordLen, bool UniqueLtrs = true, Random random = null)
+        public static HashSet<string> GetWords(DictionaryLib.DictionaryType dictType, int DesiredWordLen, bool UniqueLtrs = true, bool ToUpper = false, Random? random = null)
         {
             var dic = new DictionaryLib.DictionaryLib(dictType, random);
             var hashResult = new HashSet<string>();
@@ -22,6 +22,10 @@
                     }
                     if (uniqueCnt == DesiredWordLen)
                     {
+                        if (ToUpper)
+                        {
+                            wrd = wrd.ToUpper();
+                        }
                         hashResult.Add(wrd);
                     }
                 }

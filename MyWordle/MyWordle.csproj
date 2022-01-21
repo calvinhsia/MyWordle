@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <StartupObject>MyWordle.App</StartupObject>
+    <ApplicationIcon>MyWordle.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="MyWordle.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="DictionaryLib_Calvin_Hsia" Version="1.0.2" />
